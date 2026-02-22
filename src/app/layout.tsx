@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "FMETS2",
-  description: "FMETS2 Website",
+  title: "FM ETS2 JP",
+  description: "FM ETS2 JP",
 };
 
 export default function RootLayout({

@@ -26,7 +26,7 @@ function Header({ isLoggedIn }: { isLoggedIn: boolean }) {
       align="center"
     >
       <Heading as="h1" size="md" color="gray.800">
-        FMETS2
+        FM ETS2 JP
       </Heading>
       <Spacer />
       <HStack gap="6">
@@ -56,7 +56,7 @@ function Hero() {
       <Container maxW="breakpoint-lg">
         <VStack gap="6" textAlign="center">
           <Heading as="h2" size="4xl" color="gray.900">
-            Welcome to FMETS2
+            Welcome to FM ETS2 JP
           </Heading>
           <Text fontSize="xl" color="gray.600" maxW="600px">
             Built with Next.js, TypeScript, and Chakra UI. Ready to deploy on
@@ -134,7 +134,7 @@ function Footer() {
     <Box as="footer" bg="gray.800" color="white" py="8">
       <Container maxW="breakpoint-lg">
         <Text textAlign="center" fontSize="sm">
-          &copy; 2026 FMETS2. All rights reserved.
+          &copy; 2026 FM ETS2 JP. All rights reserved.
         </Text>
       </Container>
     </Box>

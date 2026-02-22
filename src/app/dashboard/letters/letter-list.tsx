@@ -57,16 +57,18 @@ function LetterItem({ letter }: { letter: Letter }) {
             </Text>
           </Flex>
           <Spacer />
-          <Button
-            size="xs"
-            variant="ghost"
-            color="red.500"
-            onClick={handleDelete}
-            loading={isPending}
-            loadingText="削除中..."
-          >
-            削除
-          </Button>
+          {!letter.processed && (
+            <Button
+              size="xs"
+              variant="ghost"
+              color="red.500"
+              onClick={handleDelete}
+              loading={isPending}
+              loadingText="削除中..."
+            >
+              削除
+            </Button>
+          )}
         </Flex>
       </VStack>
     </Box>

@@ -73,6 +73,17 @@ export async function deleteLetter(letterId: string) {
     return { error: "認証されていません。" };
   }
 
+  const { data: letter } = await supabase
+    .from("letters")
+    .select("processed")
+    .eq("id", letterId)
+    .eq("user_id", user.id)
+    .single();
+
+  if (letter?.processed) {
+    return { error: "処理済のおたよりは削除できません。" };
+  }
+
   const { error } = await supabase
     .from("letters")
     .delete()

@@ -40,7 +40,7 @@ export function DashboardHeader({ userEmail, nickname }: { userEmail: string; ni
     >
       <Heading as="h1" size="md" color="gray.800">
         <Link asChild color="gray.800" textDecoration="none">
-          <NextLink href="/">FMETS2</NextLink>
+          <NextLink href="/">FM ETS2 JP</NextLink>
         </Link>
       </Heading>
       <Spacer />
