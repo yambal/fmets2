@@ -821,21 +821,38 @@
             "fill": "$gray-200"
           },
           "layout": "vertical",
-          "gap": 4,
-          "padding": [
-            24,
-            0
-          ],
+          "gap": 8,
           "children": [
             {
-              "type": "text",
-              "id": "Ngqsz",
-              "name": "logo",
-              "fill": "$gray-800",
-              "content": "FM ETS2 JP",
-              "fontFamily": "Inter",
-              "fontSize": 18,
-              "fontWeight": "bold"
+              "type": "frame",
+              "id": "fcuid",
+              "name": "Logo Area",
+              "width": "fill_container",
+              "height": 64,
+              "stroke": {
+                "align": "inside",
+                "thickness": {
+                  "bottom": 1
+                },
+                "fill": "$gray-200"
+              },
+              "padding": [
+                0,
+                24
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Ngqsz",
+                  "name": "logo",
+                  "fill": "$gray-800",
+                  "content": "FM ETS2 JP",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "bold"
+                }
+              ]
             },
             {
               "type": "frame",
@@ -1075,21 +1092,38 @@
             "fill": "$gray-200"
           },
           "layout": "vertical",
-          "gap": 4,
-          "padding": [
-            24,
-            0
-          ],
+          "gap": 8,
           "children": [
             {
-              "type": "text",
-              "id": "4fWnU",
-              "name": "logo2",
-              "fill": "$gray-800",
-              "content": "FM ETS2 JP",
-              "fontFamily": "Inter",
-              "fontSize": 18,
-              "fontWeight": "bold"
+              "type": "frame",
+              "id": "miN1O",
+              "name": "Logo Area",
+              "width": "fill_container",
+              "height": 64,
+              "stroke": {
+                "align": "inside",
+                "thickness": {
+                  "bottom": 1
+                },
+                "fill": "$gray-200"
+              },
+              "padding": [
+                0,
+                24
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "4fWnU",
+                  "name": "logo2",
+                  "fill": "$gray-800",
+                  "content": "FM ETS2 JP",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "bold"
+                }
+              ]
             },
             {
               "type": "frame",
@@ -1224,16 +1258,6 @@
               ],
               "alignItems": "center",
               "children": [
-                {
-                  "type": "text",
-                  "id": "FdrSz",
-                  "name": "headerLogo2",
-                  "fill": "$gray-800",
-                  "content": "FM ETS2 JP",
-                  "fontFamily": "Inter",
-                  "fontSize": 18,
-                  "fontWeight": "bold"
-                },
                 {
                   "type": "frame",
                   "id": "N8xOc",
@@ -1616,21 +1640,38 @@
             "fill": "$gray-200"
           },
           "layout": "vertical",
-          "gap": 4,
-          "padding": [
-            24,
-            0
-          ],
+          "gap": 8,
           "children": [
             {
-              "type": "text",
-              "id": "sskoO",
-              "name": "logo3",
-              "fill": "$gray-800",
-              "content": "FM ETS2 JP",
-              "fontFamily": "Inter",
-              "fontSize": 18,
-              "fontWeight": "bold"
+              "type": "frame",
+              "id": "OP7cM",
+              "name": "Logo Area",
+              "width": "fill_container",
+              "height": 64,
+              "stroke": {
+                "align": "inside",
+                "thickness": {
+                  "bottom": 1
+                },
+                "fill": "$gray-200"
+              },
+              "padding": [
+                0,
+                24
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "sskoO",
+                  "name": "logo3",
+                  "fill": "$gray-800",
+                  "content": "FM ETS2 JP",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "bold"
+                }
+              ]
             },
             {
               "type": "frame",
@@ -1765,16 +1806,6 @@
               ],
               "alignItems": "center",
               "children": [
-                {
-                  "type": "text",
-                  "id": "b7hwu",
-                  "name": "headerLogo3",
-                  "fill": "$gray-800",
-                  "content": "FM ETS2 JP",
-                  "fontFamily": "Inter",
-                  "fontSize": 18,
-                  "fontWeight": "bold"
-                },
                 {
                   "type": "frame",
                   "id": "lSSXc",

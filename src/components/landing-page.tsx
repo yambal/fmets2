@@ -59,8 +59,8 @@ function Hero() {
             Welcome to FM ETS2 JP
           </Heading>
           <Text fontSize="xl" color="gray.600" maxW="600px">
-            Built with Next.js, TypeScript, and Chakra UI. Ready to deploy on
-            Vercel.
+            Next.js and Chakra UI
+            を使用した、高速でタイプセーフな美しいウェブアプリケーションを構築するためのスターターテンプレートです。
           </Text>
           <HStack gap="4">
             <Button colorPalette="blue" size="lg">
@@ -81,17 +81,17 @@ function Features() {
     {
       title: "Fast",
       description:
-        "Optimized for speed with Next.js App Router and server-side rendering.",
+        "Built on Next.js for optimal performance and developer experience.",
     },
     {
       title: "Type Safe",
       description:
-        "Full TypeScript support for a reliable development experience.",
+        "Full TypeScript support for reliable and maintainable code.",
     },
     {
       title: "Beautiful UI",
       description:
-        "Chakra UI provides accessible, composable components out of the box.",
+        "Chakra UI components for accessible and customizable interfaces.",
     },
   ];
 

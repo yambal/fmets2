@@ -25,14 +25,14 @@ export default async function DashboardLayout({
     .single();
 
   return (
-    <Box minH="100vh">
-      <DashboardHeader userEmail={user.email ?? ""} nickname={profile?.nickname ?? ""} />
-      <Flex>
-        <Sidebar />
+    <Flex minH="100vh">
+      <Sidebar />
+      <Box flex="1" display="flex" flexDirection="column">
+        <DashboardHeader userEmail={user.email ?? ""} nickname={profile?.nickname ?? ""} />
         <Box flex="1" p="8">
           {children}
         </Box>
-      </Flex>
-    </Box>
+      </Box>
+    </Flex>
   );
 }

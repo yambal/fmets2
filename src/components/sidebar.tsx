@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, VStack, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, VStack, Text } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -22,14 +22,19 @@ export function Sidebar() {
     <Box
       as="nav"
       w="240px"
-      minH="calc(100vh - 65px)"
-      bg="gray.50"
+      minH="100vh"
+      bg="white"
       borderRight="1px solid"
       borderColor="gray.200"
-      py="4"
+      py="0"
       flexShrink={0}
     >
-      <VStack gap="1" align="stretch" px="3">
+      <Flex h="16" align="center" px="6" borderBottom="1px solid" borderColor="gray.200">
+        <Heading size="md" color="gray.800" fontWeight="bold">
+          FM ETS2 JP
+        </Heading>
+      </Flex>
+      <VStack gap="1" align="stretch" px="3" pt="2">
         {menuItems.map((item) => {
           const isActive =
             item.href === "/dashboard"
