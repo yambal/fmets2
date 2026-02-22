@@ -1,0 +1,1964 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "d6ATg",
+      "x": 0,
+      "y": 0,
+      "name": "FM ETS2 JP Landing Page",
+      "width": 1440,
+      "fill": "$white",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "4T4h7",
+          "name": "Header",
+          "width": "fill_container",
+          "fill": "$white",
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "$gray-200"
+          },
+          "padding": [
+            16,
+            32
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "HutNo",
+              "name": "Logo",
+              "fill": "$gray-800",
+              "content": "FM ETS2 JP",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "4G0A4",
+              "name": "Spacer",
+              "width": "fill_container",
+              "height": 1,
+              "layout": "none"
+            },
+            {
+              "type": "frame",
+              "id": "WvJt0",
+              "name": "Nav",
+              "gap": 24,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "KaBGb",
+                  "name": "navFeatures",
+                  "fill": "$gray-600",
+                  "content": "Features",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "3j7S6",
+                  "name": "navAbout",
+                  "fill": "$gray-600",
+                  "content": "About",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "id": "GNZHe",
+                  "type": "ref",
+                  "ref": "kal5J",
+                  "name": "Header CTA",
+                  "padding": [
+                    8,
+                    16
+                  ],
+                  "descendants": {
+                    "Kjxea": {
+                      "content": "Get Started",
+                      "fontSize": 14
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "sYeU3",
+          "name": "Hero",
+          "width": "fill_container",
+          "fill": "$gray-50",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            80,
+            120
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "g7VzL",
+              "name": "Hero Title",
+              "fill": "$gray-900",
+              "content": "Welcome to FM ETS2 JP",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 48,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "1fHaP",
+              "name": "Hero Subtitle",
+              "fill": "$gray-600",
+              "textGrowth": "fixed-width",
+              "width": 800,
+              "content": "Next.js and Chakra UI を使用した、高速でタイプセーフな美しいウェブアプリケーションを構築するためのスターターテンプレートです。",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "19FoL",
+              "name": "Button Row",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "id": "VfGjL",
+                  "type": "ref",
+                  "ref": "kal5J",
+                  "name": "Hero Get Started",
+                  "padding": [
+                    12,
+                    24
+                  ],
+                  "descendants": {
+                    "Kjxea": {
+                      "content": "Get Started",
+                      "fontSize": 18
+                    }
+                  }
+                },
+                {
+                  "id": "K7SRQ",
+                  "type": "ref",
+                  "ref": "LjJS4",
+                  "name": "Hero Learn More",
+                  "padding": [
+                    12,
+                    24
+                  ],
+                  "descendants": {
+                    "FVIN4": {
+                      "content": "Learn More",
+                      "fontSize": 18
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "XYtja",
+          "name": "Features",
+          "width": "fill_container",
+          "fill": "$white",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            80,
+            120
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "CWKdt",
+              "name": "Features Title",
+              "fill": "$gray-900",
+              "content": "Features",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 36,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "OY2YB",
+              "name": "Card Row",
+              "gap": 32,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "A4ptk",
+                  "name": "Card Fast",
+                  "width": 300,
+                  "fill": "$white",
+                  "cornerRadius": 12,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0000001A",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 16
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "x7Anu",
+                      "name": "card1Title",
+                      "fill": "$gray-800",
+                      "content": "Fast",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "rGMH6",
+                      "name": "card1Desc",
+                      "fill": "$gray-600",
+                      "textGrowth": "fixed-width",
+                      "width": 236,
+                      "content": "Built on Next.js for optimal performance and developer experience.",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "XaLkp",
+                  "name": "Card TypeSafe",
+                  "width": 300,
+                  "fill": "$white",
+                  "cornerRadius": 12,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0000001A",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 16
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "WiCsh",
+                      "name": "card2Title",
+                      "fill": "$gray-800",
+                      "content": "Type Safe",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "mcw9M",
+                      "name": "card2Desc",
+                      "fill": "$gray-600",
+                      "textGrowth": "fixed-width",
+                      "width": 236,
+                      "content": "Full TypeScript support for reliable and maintainable code.",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "C4idu",
+                  "name": "Card BeautifulUI",
+                  "width": 300,
+                  "fill": "$white",
+                  "cornerRadius": 12,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0000001A",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 16
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "LaEzS",
+                      "name": "card3Title",
+                      "fill": "$gray-800",
+                      "content": "Beautiful UI",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "cJn55",
+                      "name": "card3Desc",
+                      "fill": "$gray-600",
+                      "textGrowth": "fixed-width",
+                      "width": 236,
+                      "content": "Chakra UI components for accessible and customizable interfaces.",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Cl9aj",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "$gray-800",
+          "layout": "vertical",
+          "padding": [
+            32,
+            120
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "uhScv",
+              "name": "footerText",
+              "fill": "$white",
+              "content": "© 2026 FM ETS2 JP. All rights reserved.",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "5BRxG",
+      "x": 1540,
+      "y": 0,
+      "name": "Color Swatches",
+      "width": 720,
+      "fill": "#F9FAFB",
+      "cornerRadius": 16,
+      "layout": "vertical",
+      "gap": 32,
+      "padding": 40,
+      "children": [
+        {
+          "type": "text",
+          "id": "LBfa4",
+          "name": "title",
+          "fill": "$gray-900",
+          "content": "Color Palette",
+          "fontFamily": "Inter",
+          "fontSize": 28,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "4pmNC",
+          "name": "subtitle",
+          "fill": "$gray-600",
+          "content": "FM ETS2 JP Design Tokens",
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "52QBC",
+          "name": "Row Primary",
+          "width": "fill_container",
+          "gap": 20,
+          "children": [
+            {
+              "type": "frame",
+              "id": "Wyt2A",
+              "name": "Swatch White",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "07tAf",
+                  "name": "sWhiteBox",
+                  "width": "fill_container",
+                  "height": 80,
+                  "fill": "$white",
+                  "cornerRadius": 10,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$gray-200"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "P6drz",
+                  "name": "sWhiteName",
+                  "fill": "$gray-800",
+                  "content": "white",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "semibold"
+                },
+                {
+                  "type": "text",
+                  "id": "kepiX",
+                  "name": "sWhiteVal",
+                  "fill": "$gray-600",
+                  "content": "#FFFFFF",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "FCDwS",
+              "name": "Swatch Gray50",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Ll8tu",
+                  "name": "sG50Box",
+                  "width": "fill_container",
+                  "height": 80,
+                  "fill": "$gray-50",
+                  "cornerRadius": 10,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$gray-200"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "MglYm",
+                  "name": "sG50Name",
+                  "fill": "$gray-800",
+                  "content": "gray-50",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "semibold"
+                },
+                {
+                  "type": "text",
+                  "id": "6qvOm",
+                  "name": "sG50Val",
+                  "fill": "$gray-600",
+                  "content": "#F7FAFC",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "F7oT3",
+              "name": "Swatch Gray200",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "YS8pX",
+                  "name": "sG200Box",
+                  "width": "fill_container",
+                  "height": 80,
+                  "fill": "$gray-200",
+                  "cornerRadius": 10
+                },
+                {
+                  "type": "text",
+                  "id": "8QXvU",
+                  "name": "sG200Name",
+                  "fill": "$gray-800",
+                  "content": "gray-200",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "semibold"
+                },
+                {
+                  "type": "text",
+                  "id": "F6shJ",
+                  "name": "sG200Val",
+                  "fill": "$gray-600",
+                  "content": "#E2E8F0",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "kzXNE",
+              "name": "Swatch Blue500",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "6Rqyx",
+                  "name": "sBlueBox",
+                  "width": "fill_container",
+                  "height": 80,
+                  "fill": "$blue-500",
+                  "cornerRadius": 10
+                },
+                {
+                  "type": "text",
+                  "id": "RcDdO",
+                  "name": "sBlueName",
+                  "fill": "$gray-800",
+                  "content": "blue-500",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "semibold"
+                },
+                {
+                  "type": "text",
+                  "id": "ba3RW",
+                  "name": "sBlueVal",
+                  "fill": "$gray-600",
+                  "content": "#3182CE",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "PJxEe",
+          "name": "Row Dark",
+          "width": "fill_container",
+          "gap": 20,
+          "children": [
+            {
+              "type": "frame",
+              "id": "mZZdQ",
+              "name": "Swatch Gray600",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "5zPT0",
+                  "name": "sG600Box",
+                  "width": "fill_container",
+                  "height": 80,
+                  "fill": "$gray-600",
+                  "cornerRadius": 10
+                },
+                {
+                  "type": "text",
+                  "id": "yyMXJ",
+                  "name": "sG600Name",
+                  "fill": "$gray-800",
+                  "content": "gray-600",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "semibold"
+                },
+                {
+                  "type": "text",
+                  "id": "BpRJ4",
+                  "name": "sG600Val",
+                  "fill": "$gray-600",
+                  "content": "#718096",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ZDngs",
+              "name": "Swatch Gray800",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "MybsI",
+                  "name": "sG800Box",
+                  "width": "fill_container",
+                  "height": 80,
+                  "fill": "$gray-800",
+                  "cornerRadius": 10
+                },
+                {
+                  "type": "text",
+                  "id": "DYP6D",
+                  "name": "sG800Name",
+                  "fill": "$gray-800",
+                  "content": "gray-800",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "semibold"
+                },
+                {
+                  "type": "text",
+                  "id": "GIasr",
+                  "name": "sG800Val",
+                  "fill": "$gray-600",
+                  "content": "#2D3748",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "c5119",
+              "name": "Swatch Gray900",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "TrERx",
+                  "name": "sG900Box",
+                  "width": "fill_container",
+                  "height": 80,
+                  "fill": "$gray-900",
+                  "cornerRadius": 10
+                },
+                {
+                  "type": "text",
+                  "id": "dTsRB",
+                  "name": "sG900Name",
+                  "fill": "$gray-800",
+                  "content": "gray-900",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "semibold"
+                },
+                {
+                  "type": "text",
+                  "id": "XMxx2",
+                  "name": "sG900Val",
+                  "fill": "$gray-600",
+                  "content": "#1A202C",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "kal5J",
+      "x": 0,
+      "y": 1025,
+      "name": "Button/Primary",
+      "reusable": true,
+      "fill": "$blue-500",
+      "cornerRadius": 6,
+      "gap": 8,
+      "padding": [
+        12,
+        24
+      ],
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "icon_font",
+          "id": "0clCK",
+          "name": "icon",
+          "enabled": false,
+          "width": 18,
+          "height": 18,
+          "iconFontName": "arrow-right",
+          "iconFontFamily": "lucide",
+          "fill": "$white"
+        },
+        {
+          "type": "text",
+          "id": "Kjxea",
+          "name": "label",
+          "fill": "$white",
+          "content": "Button",
+          "fontFamily": "Inter",
+          "fontSize": 16,
+          "fontWeight": "semibold"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "LjJS4",
+      "x": 200,
+      "y": 1025,
+      "name": "Button/Outline",
+      "reusable": true,
+      "cornerRadius": 6,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1,
+        "fill": "$gray-800"
+      },
+      "gap": 8,
+      "padding": [
+        12,
+        24
+      ],
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "icon_font",
+          "id": "Ny9tv",
+          "name": "icon",
+          "enabled": false,
+          "width": 18,
+          "height": 18,
+          "iconFontName": "arrow-right",
+          "iconFontFamily": "lucide",
+          "fill": "$gray-800"
+        },
+        {
+          "type": "text",
+          "id": "FVIN4",
+          "name": "label",
+          "fill": "$gray-800",
+          "content": "Button",
+          "fontFamily": "Inter",
+          "fontSize": 16,
+          "fontWeight": "semibold"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "lTwmI",
+      "x": 0,
+      "y": 1268,
+      "name": "Dashboard",
+      "width": 1440,
+      "fill": "$gray-50",
+      "children": [
+        {
+          "type": "frame",
+          "id": "xfwO7",
+          "name": "Sidebar",
+          "width": 240,
+          "height": "fill_container",
+          "fill": "$white",
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "right": 1
+            },
+            "fill": "$gray-200"
+          },
+          "layout": "vertical",
+          "gap": 4,
+          "padding": [
+            24,
+            0
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "Ngqsz",
+              "name": "logo",
+              "fill": "$gray-800",
+              "content": "FM ETS2 JP",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "sQj1l",
+              "name": "Nav Active",
+              "width": "fill_container",
+              "fill": "$blue-500",
+              "gap": 10,
+              "padding": [
+                10,
+                24
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "tBCGv",
+                  "name": "navActiveIcon",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "layout-dashboard",
+                  "iconFontFamily": "lucide",
+                  "fill": "$white"
+                },
+                {
+                  "type": "text",
+                  "id": "wGQk2",
+                  "name": "navActiveLabel",
+                  "fill": "$white",
+                  "content": "ダッシュボード",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "semibold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "YdMC2",
+              "name": "Nav Letters",
+              "width": "fill_container",
+              "gap": 10,
+              "padding": [
+                10,
+                24
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "UIm0Q",
+                  "name": "navLettersIcon",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "mail",
+                  "iconFontFamily": "lucide",
+                  "fill": "$gray-600"
+                },
+                {
+                  "type": "text",
+                  "id": "F4wHM",
+                  "name": "navLettersLabel",
+                  "fill": "$gray-600",
+                  "content": "おたより投稿",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "FWlMS",
+              "name": "Nav Profile",
+              "width": "fill_container",
+              "gap": 10,
+              "padding": [
+                10,
+                24
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "evAJK",
+                  "name": "navProfileIcon",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "user",
+                  "iconFontFamily": "lucide",
+                  "fill": "$gray-600"
+                },
+                {
+                  "type": "text",
+                  "id": "7S4zC",
+                  "name": "navProfileLabel",
+                  "fill": "$gray-600",
+                  "content": "プロフィール",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "10KqQ",
+          "name": "Right Area",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "6jfJu",
+              "name": "Dashboard Header",
+              "width": "fill_container",
+              "height": 64,
+              "fill": "$white",
+              "stroke": {
+                "align": "inside",
+                "thickness": {
+                  "bottom": 1
+                },
+                "fill": "$gray-200"
+              },
+              "padding": [
+                0,
+                32
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "G8n0V",
+                  "name": "Spacer",
+                  "width": "fill_container",
+                  "height": 1,
+                  "layout": "none"
+                },
+                {
+                  "type": "frame",
+                  "id": "CUEY7",
+                  "name": "Header Right",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "tGY96",
+                      "name": "headerNickname",
+                      "fill": "$gray-600",
+                      "content": "テストユーザー",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "id": "uxNPJ",
+                      "type": "ref",
+                      "ref": "LjJS4",
+                      "padding": [
+                        6,
+                        12
+                      ],
+                      "name": "headerLogout",
+                      "descendants": {
+                        "FVIN4": {
+                          "content": "ログアウト",
+                          "fontSize": 13
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "uqibQ",
+              "name": "Main Content",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "padding": 32,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "0NHVR",
+                  "name": "pageTitle",
+                  "fill": "$gray-900",
+                  "content": "ダッシュボード",
+                  "fontFamily": "Inter",
+                  "fontSize": 28,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "0IPfN",
+                  "name": "welcomeText",
+                  "fill": "$gray-600",
+                  "content": "FM ETS2 JP へようこそ！サイドメニューから各機能をご利用ください。",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "CKjZa",
+      "x": 1540,
+      "y": 1268,
+      "name": "Letters Page",
+      "width": 1440,
+      "fill": "$gray-50",
+      "children": [
+        {
+          "type": "frame",
+          "id": "46fqK",
+          "name": "Sidebar",
+          "width": 240,
+          "height": "fill_container",
+          "fill": "$white",
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "right": 1
+            },
+            "fill": "$gray-200"
+          },
+          "layout": "vertical",
+          "gap": 4,
+          "padding": [
+            24,
+            0
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "4fWnU",
+              "name": "logo2",
+              "fill": "$gray-800",
+              "content": "FM ETS2 JP",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "s9gKf",
+              "name": "Nav Dashboard",
+              "width": "fill_container",
+              "gap": 10,
+              "padding": [
+                10,
+                24
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "KpQpi",
+                  "name": "navDashIcon2",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "layout-dashboard",
+                  "iconFontFamily": "lucide",
+                  "fill": "$gray-600"
+                },
+                {
+                  "type": "text",
+                  "id": "osJkO",
+                  "name": "navDashLabel2",
+                  "fill": "$gray-600",
+                  "content": "ダッシュボード",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "3WaBi",
+              "name": "Nav Letters Active",
+              "width": "fill_container",
+              "fill": "$blue-500",
+              "gap": 10,
+              "padding": [
+                10,
+                24
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "IlGxZ",
+                  "name": "navLettersIcon2",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "mail",
+                  "iconFontFamily": "lucide",
+                  "fill": "$white"
+                },
+                {
+                  "type": "text",
+                  "id": "GKX8N",
+                  "name": "navLettersLabel2",
+                  "fill": "$white",
+                  "content": "おたより投稿",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "semibold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "bUTEi",
+              "name": "Nav Profile",
+              "width": "fill_container",
+              "gap": 10,
+              "padding": [
+                10,
+                24
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "lwiNv",
+                  "name": "navProfileIcon2",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "user",
+                  "iconFontFamily": "lucide",
+                  "fill": "$gray-600"
+                },
+                {
+                  "type": "text",
+                  "id": "dH1EH",
+                  "name": "navProfileLabel2",
+                  "fill": "$gray-600",
+                  "content": "プロフィール",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "xh8w2",
+          "name": "Right Area",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "znUrN",
+              "name": "Dashboard Header",
+              "width": "fill_container",
+              "height": 64,
+              "fill": "$white",
+              "stroke": {
+                "align": "inside",
+                "thickness": {
+                  "bottom": 1
+                },
+                "fill": "$gray-200"
+              },
+              "padding": [
+                0,
+                32
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "FdrSz",
+                  "name": "headerLogo2",
+                  "fill": "$gray-800",
+                  "content": "FM ETS2 JP",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "frame",
+                  "id": "N8xOc",
+                  "name": "Spacer",
+                  "width": "fill_container",
+                  "height": 1,
+                  "layout": "none"
+                },
+                {
+                  "type": "frame",
+                  "id": "MLfHA",
+                  "name": "Header Right",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "bczd8",
+                      "name": "headerNick2",
+                      "fill": "$gray-600",
+                      "content": "テストユーザー",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "id": "tIpcD",
+                      "type": "ref",
+                      "ref": "LjJS4",
+                      "padding": [
+                        6,
+                        12
+                      ],
+                      "name": "headerLogout2",
+                      "descendants": {
+                        "FVIN4": {
+                          "content": "ログアウト",
+                          "fontSize": 13
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "JKRn8",
+              "name": "Main Content",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "padding": 32,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ztHNe",
+                  "name": "pageTitle2",
+                  "fill": "$gray-900",
+                  "content": "おたより投稿",
+                  "fontFamily": "Inter",
+                  "fontSize": 28,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "frame",
+                  "id": "0z67a",
+                  "name": "Letter Form",
+                  "width": "fill_container",
+                  "fill": "$white",
+                  "cornerRadius": 8,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$gray-200"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "OluW2",
+                      "name": "formNickname",
+                      "fill": "$gray-600",
+                      "content": "投稿者: テストユーザー",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "NxcZ7",
+                      "name": "formNotice",
+                      "fill": "$gray-600",
+                      "content": "※ 投稿すると6時間は次の投稿ができません。",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "fDjko",
+                      "name": "Textarea",
+                      "width": "fill_container",
+                      "height": 120,
+                      "fill": "$white",
+                      "cornerRadius": 6,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$gray-200"
+                      },
+                      "padding": [
+                        10,
+                        14
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "GlHt1",
+                          "name": "textareaPlaceholder",
+                          "fill": "$gray-600",
+                          "content": "おたよりの内容を入力してください...",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ElGqL",
+                      "name": "Submit Row",
+                      "width": "fill_container",
+                      "justifyContent": "end",
+                      "children": [
+                        {
+                          "id": "GNhHV",
+                          "type": "ref",
+                          "ref": "kal5J",
+                          "padding": [
+                            8,
+                            20
+                          ],
+                          "name": "submitBtn",
+                          "descendants": {
+                            "Kjxea": {
+                              "content": "投稿する",
+                              "fontSize": 14
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "1PJch",
+                  "name": "listHeading",
+                  "fill": "$gray-800",
+                  "content": "投稿したおたより",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "semibold"
+                },
+                {
+                  "type": "frame",
+                  "id": "5wKgq",
+                  "name": "Letter Item 1",
+                  "width": "fill_container",
+                  "fill": "$white",
+                  "cornerRadius": 6,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$gray-200"
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "xnNcV",
+                      "name": "letter1Body",
+                      "fill": "$gray-900",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "いつも配信ありがとうございます！ETS2の長距離ドライブ、最高に癒されます。",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "vzK2o",
+                      "name": "Meta",
+                      "width": "fill_container",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "NxuzT",
+                          "name": "Status Badge",
+                          "fill": "#C6F6D5",
+                          "cornerRadius": 4,
+                          "padding": [
+                            2,
+                            6
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "eN4vA",
+                              "name": "letter1StatusText",
+                              "fill": "#276749",
+                              "content": "処理済",
+                              "fontFamily": "Inter",
+                              "fontSize": 11,
+                              "fontWeight": "semibold"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "jTMdd",
+                          "name": "letter1Nick",
+                          "fill": "$blue-500",
+                          "content": "テストユーザー",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "semibold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "PZvzl",
+                          "name": "letter1Date",
+                          "fill": "$gray-600",
+                          "content": "2026年2月23日 14:30",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "5oJP2",
+                  "name": "Letter Item 2",
+                  "width": "fill_container",
+                  "fill": "$white",
+                  "cornerRadius": 6,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$gray-200"
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "zpWUe",
+                      "name": "letter2Body",
+                      "fill": "$gray-900",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "次回の配信も楽しみにしています！北欧ルートをぜひ走ってほしいです。",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "lcQou",
+                      "name": "Meta",
+                      "width": "fill_container",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "v3gaE",
+                          "name": "Status Badge",
+                          "fill": "$gray-200",
+                          "cornerRadius": 4,
+                          "padding": [
+                            2,
+                            6
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "dwbr2",
+                              "name": "letter2StatusText",
+                              "fill": "$gray-600",
+                              "content": "未処理",
+                              "fontFamily": "Inter",
+                              "fontSize": 11,
+                              "fontWeight": "semibold"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "zdb7A",
+                          "name": "letter2Nick",
+                          "fill": "$blue-500",
+                          "content": "テストユーザー",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "semibold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "J8NGO",
+                          "name": "letter2Date",
+                          "fill": "$gray-600",
+                          "content": "2026年2月22日 10:15",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "wmDjC",
+                          "name": "Spacer",
+                          "width": "fill_container",
+                          "height": 1,
+                          "layout": "none"
+                        },
+                        {
+                          "type": "text",
+                          "id": "wVvr6",
+                          "name": "letter2Delete",
+                          "fill": "#E53E3E",
+                          "content": "削除",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "eUoyc",
+      "x": 3080,
+      "y": 1268,
+      "name": "Profile Page",
+      "width": 1440,
+      "fill": "$gray-50",
+      "children": [
+        {
+          "type": "frame",
+          "id": "QVq6H",
+          "name": "Sidebar",
+          "width": 240,
+          "height": "fill_container",
+          "fill": "$white",
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "right": 1
+            },
+            "fill": "$gray-200"
+          },
+          "layout": "vertical",
+          "gap": 4,
+          "padding": [
+            24,
+            0
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "sskoO",
+              "name": "logo3",
+              "fill": "$gray-800",
+              "content": "FM ETS2 JP",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "2skKx",
+              "name": "Nav Dashboard",
+              "width": "fill_container",
+              "gap": 10,
+              "padding": [
+                10,
+                24
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "JJH8N",
+                  "name": "navDashIcon3",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "layout-dashboard",
+                  "iconFontFamily": "lucide",
+                  "fill": "$gray-600"
+                },
+                {
+                  "type": "text",
+                  "id": "cnZYp",
+                  "name": "navDashLabel3",
+                  "fill": "$gray-600",
+                  "content": "ダッシュボード",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "0hIvW",
+              "name": "Nav Letters",
+              "width": "fill_container",
+              "gap": 10,
+              "padding": [
+                10,
+                24
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "rnr96",
+                  "name": "navLettersIcon3",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "mail",
+                  "iconFontFamily": "lucide",
+                  "fill": "$gray-600"
+                },
+                {
+                  "type": "text",
+                  "id": "52uFT",
+                  "name": "navLettersLabel3",
+                  "fill": "$gray-600",
+                  "content": "おたより投稿",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "JSdTn",
+              "name": "Nav Profile Active",
+              "width": "fill_container",
+              "fill": "$blue-500",
+              "gap": 10,
+              "padding": [
+                10,
+                24
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "hqtmx",
+                  "name": "navProfileIcon3",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "user",
+                  "iconFontFamily": "lucide",
+                  "fill": "$white"
+                },
+                {
+                  "type": "text",
+                  "id": "Whb7r",
+                  "name": "navProfileLabel3",
+                  "fill": "$white",
+                  "content": "プロフィール",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "semibold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "m9aPF",
+          "name": "Right Area",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "wdcTx",
+              "name": "Dashboard Header",
+              "width": "fill_container",
+              "height": 64,
+              "fill": "$white",
+              "stroke": {
+                "align": "inside",
+                "thickness": {
+                  "bottom": 1
+                },
+                "fill": "$gray-200"
+              },
+              "padding": [
+                0,
+                32
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "b7hwu",
+                  "name": "headerLogo3",
+                  "fill": "$gray-800",
+                  "content": "FM ETS2 JP",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "frame",
+                  "id": "lSSXc",
+                  "name": "Spacer",
+                  "width": "fill_container",
+                  "height": 1,
+                  "layout": "none"
+                },
+                {
+                  "type": "frame",
+                  "id": "QRDc1",
+                  "name": "Header Right",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "tZWlE",
+                      "name": "headerNick3",
+                      "fill": "$gray-600",
+                      "content": "テストユーザー",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "id": "XmqD7",
+                      "type": "ref",
+                      "ref": "LjJS4",
+                      "padding": [
+                        6,
+                        12
+                      ],
+                      "name": "headerLogout3",
+                      "descendants": {
+                        "FVIN4": {
+                          "content": "ログアウト",
+                          "fontSize": 13
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "xd051",
+              "name": "Main Content",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "padding": 32,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "PaWWn",
+                  "name": "pageTitle3",
+                  "fill": "$gray-900",
+                  "content": "プロフィール設定",
+                  "fontFamily": "Inter",
+                  "fontSize": 28,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "frame",
+                  "id": "SY1ek",
+                  "name": "Profile Form",
+                  "width": "fill_container",
+                  "fill": "$white",
+                  "cornerRadius": 8,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$gray-200"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "FrIMx",
+                      "name": "nickLabel",
+                      "fill": "$gray-800",
+                      "content": "ニックネーム",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "semibold"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "nFbFU",
+                      "name": "Nickname Input",
+                      "width": "fill_container",
+                      "height": 40,
+                      "fill": "$white",
+                      "cornerRadius": 6,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$gray-200"
+                      },
+                      "padding": [
+                        0,
+                        14
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "lRlM4",
+                          "name": "nickValue",
+                          "fill": "$gray-900",
+                          "content": "テストユーザー",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "jhVYk",
+                      "name": "Save Row",
+                      "width": "fill_container",
+                      "justifyContent": "end",
+                      "children": [
+                        {
+                          "id": "MTOH8",
+                          "type": "ref",
+                          "ref": "kal5J",
+                          "padding": [
+                            8,
+                            20
+                          ],
+                          "name": "saveBtn",
+                          "descendants": {
+                            "Kjxea": {
+                              "content": "保存する",
+                              "fontSize": 14
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "blue-500": {
+      "type": "color",
+      "value": "#3182CE"
+    },
+    "gray-200": {
+      "type": "color",
+      "value": "#E2E8F0"
+    },
+    "gray-50": {
+      "type": "color",
+      "value": "#F7FAFC"
+    },
+    "gray-600": {
+      "type": "color",
+      "value": "#718096"
+    },
+    "gray-800": {
+      "type": "color",
+      "value": "#2D3748"
+    },
+    "gray-900": {
+      "type": "color",
+      "value": "#1A202C"
+    },
+    "white": {
+      "type": "color",
+      "value": "#FFFFFF"
+    }
+  }
+}
