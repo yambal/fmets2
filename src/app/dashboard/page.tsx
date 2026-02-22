@@ -1,6 +1,5 @@
+import { Heading, Text, VStack } from "@chakra-ui/react";
 import { createClient } from "@/lib/supabase/server";
-import { redirect } from "next/navigation";
-import { DashboardContent } from "./dashboard-content";
 
 export default async function DashboardPage() {
   const supabase = await createClient();
@@ -8,9 +7,10 @@ export default async function DashboardPage() {
     data: { user },
   } = await supabase.auth.getUser();
 
-  if (!user) {
-    redirect("/login");
-  }
-
-  return <DashboardContent userEmail={user.email ?? ""} />;
+  return (
+    <VStack gap="6" align="start">
+      <Heading size="2xl">ダッシュボード</Heading>
+      <Text color="gray.600">ようこそ、{user?.email} さん</Text>
+    </VStack>
+  );
 }

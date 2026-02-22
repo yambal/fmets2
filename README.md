@@ -18,3 +18,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+GET /api/letters/unprocessed — 未処理のおたよりを古い順に返す
+
+レスポンス: { status: "ok", letters: [...] }
+PATCH /api/letters/{id}/process — 指定IDのおたよりを処理済にする
