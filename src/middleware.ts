@@ -43,9 +43,16 @@ export async function middleware(request: NextRequest) {
   }
 
   // Auth pages: redirect to /dashboard if already authenticated
-  if ((path === "/login" || path === "/signup") && user) {
+  if ((path === "/login" || path === "/signup" || path === "/forgot-password") && user) {
     const url = request.nextUrl.clone();
     url.pathname = "/dashboard";
+    return NextResponse.redirect(url);
+  }
+
+  // Reset password page requires authentication (user clicks email link which sets session)
+  if (path === "/reset-password" && !user) {
+    const url = request.nextUrl.clone();
+    url.pathname = "/login";
     return NextResponse.redirect(url);
   }
 
