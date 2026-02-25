@@ -166,7 +166,6 @@ export function RadioPlayer() {
       <Box
         w="100%"
         bg="#1A1B2E"
-        borderRadius="20px"
         p="32px 28px"
         display="flex"
         flexDirection="column"

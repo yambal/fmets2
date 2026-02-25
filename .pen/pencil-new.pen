@@ -1,0 +1,383 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "WvYcb",
+      "x": 0,
+      "y": 0,
+      "name": "Radio Player",
+      "width": 420,
+      "fill": "#1A1B2E",
+      "cornerRadius": 20,
+      "layout": "vertical",
+      "gap": 24,
+      "padding": [
+        32,
+        28
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "78VIh",
+          "name": "Header",
+          "width": "fill_container",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "NLFv8",
+              "name": "HeaderLeft",
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "Bj4OH",
+                  "name": "RadioIcon",
+                  "width": 0,
+                  "height": 0,
+                  "iconFontFamily": "Material Symbols Rounded",
+                  "fill": "#7C9070"
+                },
+                {
+                  "type": "text",
+                  "id": "xXAfX",
+                  "name": "StationName",
+                  "fill": "#F7F6F3",
+                  "content": "FM ETS2 JP",
+                  "fontFamily": "Fraunces",
+                  "fontSize": 20,
+                  "fontWeight": "semibold",
+                  "letterSpacing": -0.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Za347",
+              "name": "OnAirBadge",
+              "fill": "rgba(124,144,112,0.15)",
+              "cornerRadius": 20,
+              "gap": 6,
+              "padding": [
+                5,
+                12
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "VGNNM",
+                  "name": "StatusDot",
+                  "fill": "#7C9070",
+                  "width": 8,
+                  "height": 8
+                },
+                {
+                  "type": "text",
+                  "id": "Jt1i3",
+                  "name": "OnAirText",
+                  "fill": "#7C9070",
+                  "content": "ON AIR",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 11,
+                  "fontWeight": "semibold",
+                  "letterSpacing": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ZSMuY",
+          "name": "Visualizer",
+          "width": "fill_container",
+          "height": 220,
+          "fill": "#252640",
+          "cornerRadius": 16,
+          "gap": 8,
+          "padding": [
+            30,
+            40
+          ],
+          "justifyContent": "center",
+          "children": [
+            {
+              "type": "rectangle",
+              "cornerRadius": 6,
+              "id": "XwnzS",
+              "name": "Bar1",
+              "opacity": 0.9,
+              "fill": "#7C9070",
+              "width": 12,
+              "height": 135
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 6,
+              "id": "L4nF5",
+              "name": "Bar2",
+              "opacity": 0.7,
+              "fill": "#7C9070",
+              "width": 12,
+              "height": 80
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 6,
+              "id": "9su1a",
+              "name": "Bar3",
+              "opacity": 0.85,
+              "fill": "#7C9070",
+              "width": 12,
+              "height": 105
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 6,
+              "id": "Q84k5",
+              "name": "Bar4",
+              "opacity": 0.65,
+              "fill": "#7C9070",
+              "width": 12,
+              "height": 60
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 6,
+              "id": "hLZ0A",
+              "name": "Bar5",
+              "opacity": 0.8,
+              "fill": "#7C9070",
+              "width": 12,
+              "height": 120
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 6,
+              "id": "3AcDU",
+              "name": "Bar6",
+              "opacity": 0.75,
+              "fill": "#7C9070",
+              "width": 12,
+              "height": 90
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 6,
+              "id": "Vjibc",
+              "name": "Bar7",
+              "opacity": 0.95,
+              "fill": "#7C9070",
+              "width": 12,
+              "height": 140
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 6,
+              "id": "GRRTK",
+              "name": "Bar8",
+              "opacity": 0.7,
+              "fill": "#7C9070",
+              "width": 12,
+              "height": 70
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 6,
+              "id": "zUWJO",
+              "name": "Bar9",
+              "opacity": 0.85,
+              "fill": "#7C9070",
+              "width": 12,
+              "height": 110
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 6,
+              "id": "vKtkZ",
+              "name": "Bar10",
+              "opacity": 0.6,
+              "fill": "#7C9070",
+              "width": 12,
+              "height": 55
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 6,
+              "id": "tC8S7",
+              "name": "Bar11",
+              "opacity": 0.8,
+              "fill": "#7C9070",
+              "width": 12,
+              "height": 95
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 6,
+              "id": "Ax0oO",
+              "name": "Bar12",
+              "opacity": 0.9,
+              "fill": "#7C9070",
+              "width": 12,
+              "height": 125
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 6,
+              "id": "VChny",
+              "name": "Bar13",
+              "opacity": 0.65,
+              "fill": "#7C9070",
+              "width": 12,
+              "height": 65
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 6,
+              "id": "OwUsW",
+              "name": "Bar14",
+              "opacity": 0.75,
+              "fill": "#7C9070",
+              "width": 12,
+              "height": 100
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "NlB42",
+          "name": "TrackInfo",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 6,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "oMn3J",
+              "name": "TrackTitle",
+              "fill": "#F7F6F3",
+              "content": "FM ETS2 JP",
+              "textAlign": "center",
+              "fontFamily": "Fraunces",
+              "fontSize": 22,
+              "fontWeight": "medium",
+              "letterSpacing": -0.5
+            },
+            {
+              "type": "text",
+              "id": "u8s1E",
+              "name": "TrackArtist",
+              "fill": "#8E8E93",
+              "content": "ライブストリーミング中",
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "xO170",
+              "name": "Listeners",
+              "fill": "#6B6B6B",
+              "content": "3 リスナー",
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "Ao8IT",
+          "name": "Divider",
+          "fill": "rgba(240,239,236,0.08)",
+          "width": "fill_container",
+          "height": 1
+        },
+        {
+          "type": "frame",
+          "id": "rAYhf",
+          "name": "PlayButtonRow",
+          "width": "fill_container",
+          "justifyContent": "center",
+          "children": [
+            {
+              "type": "ellipse",
+              "id": "xccws",
+              "name": "PlayButton",
+              "fill": "#7C9070",
+              "width": 64,
+              "height": 64
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "83GHt",
+          "name": "VolumeRow",
+          "width": "fill_container",
+          "gap": 12,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon_font",
+              "id": "4KIpD",
+              "name": "VolLow",
+              "width": 0,
+              "height": 0,
+              "iconFontFamily": "Material Symbols Rounded",
+              "fill": "#8E8E93"
+            },
+            {
+              "type": "frame",
+              "id": "HEx4j",
+              "name": "VolumeTrack",
+              "width": "fill_container",
+              "height": 4,
+              "fill": "rgba(240,239,236,0.12)",
+              "cornerRadius": 2,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2,
+                  "id": "tkQlq",
+                  "x": 0,
+                  "y": 0,
+                  "name": "VolumeFill",
+                  "fill": "#7C9070",
+                  "width": 200,
+                  "height": 4
+                },
+                {
+                  "type": "ellipse",
+                  "id": "rueNQ",
+                  "x": "68%",
+                  "y": -4,
+                  "name": "VolumeThumb",
+                  "fill": "#F7F6F3",
+                  "width": 12,
+                  "height": 12
+                }
+              ]
+            },
+            {
+              "type": "icon_font",
+              "id": "isap2",
+              "name": "VolHigh",
+              "width": 0,
+              "height": 0,
+              "iconFontFamily": "Material Symbols Rounded",
+              "fill": "#8E8E93"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

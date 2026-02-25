@@ -53,8 +53,6 @@ function Header({ isLoggedIn }: { isLoggedIn: boolean }) {
 
 function Hero() {
   return (
-    <Box bg="gray.50" py="20">
-      <Container maxW="breakpoint-lg">
         <VStack gap="10" textAlign="center">
           <VStack gap="6">
             <Heading as="h2" size="4xl" color="gray.900">
@@ -67,8 +65,6 @@ function Hero() {
           </VStack>
           <RadioPlayer />
         </VStack>
-      </Container>
-    </Box>
   );
 }
 
