@@ -4,7 +4,7 @@ import { useRef, useState, useEffect, useCallback } from "react";
 import { Box, Flex, Text } from "@chakra-ui/react";
 import { Radio, Play, Pause, Volume1, Volume2, Loader } from "lucide-react";
 
-const STREAM_URL = "http://161.33.147.217:8000/stream";
+const STREAM_URL = "https://161.33.147.217:8000/stream";
 const STATUS_URL = "/api/stream/status";
 
 const NUM_BARS = 14;
