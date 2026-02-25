@@ -13,6 +13,7 @@ import {
   Link,
 } from "@chakra-ui/react";
 import NextLink from "next/link";
+import { RadioPlayer } from "./radio-player";
 
 function Header({ isLoggedIn }: { isLoggedIn: boolean }) {
   return (
@@ -54,22 +55,17 @@ function Hero() {
   return (
     <Box bg="gray.50" py="20">
       <Container maxW="breakpoint-lg">
-        <VStack gap="6" textAlign="center">
-          <Heading as="h2" size="4xl" color="gray.900">
-            Welcome to FM ETS2 JP
-          </Heading>
-          <Text fontSize="xl" color="gray.600" maxW="600px">
-            Next.js and Chakra UI
-            を使用した、高速でタイプセーフな美しいウェブアプリケーションを構築するためのスターターテンプレートです。
-          </Text>
-          <HStack gap="4">
-            <Button colorPalette="blue" size="lg">
-              Get Started
-            </Button>
-            <Button variant="outline" size="lg">
-              Learn More
-            </Button>
-          </HStack>
+        <VStack gap="10" textAlign="center">
+          <VStack gap="6">
+            <Heading as="h2" size="4xl" color="gray.900">
+              Welcome to FM ETS2 JP
+            </Heading>
+            <Text fontSize="xl" color="gray.600" maxW="600px">
+              Euro Truck Simulator 2
+              のストリームラジオ。ライブ配信をお楽しみください。
+            </Text>
+          </VStack>
+          <RadioPlayer />
         </VStack>
       </Container>
     </Box>
