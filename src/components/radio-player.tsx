@@ -15,8 +15,9 @@ function Visualizer({ isPlaying }: { isPlaying: boolean }) {
   return (
     <Box
       position="relative"
-      w="100%"
-      h="220px"
+      w={{ base: "100%", md: "180px" }}
+      minH="180px"
+      flexShrink={0}
       bg="#252640"
       borderRadius="16px"
       overflow="hidden"
@@ -24,10 +25,11 @@ function Visualizer({ isPlaying }: { isPlaying: boolean }) {
       {/* Glow background */}
       <Box
         position="absolute"
-        left="60px"
-        top="30px"
-        w="240px"
-        h="160px"
+        left="50%"
+        top="50%"
+        transform="translate(-50%, -50%)"
+        w="60%"
+        h="60%"
         borderRadius="50%"
         bg="radial-gradient(circle, rgba(124,144,112,0.25) 0%, rgba(124,144,112,0) 100%)"
       />
@@ -114,12 +116,10 @@ export function RadioPlayer() {
       audio.muted = true;
       setIsPlaying(false);
     } else if (startedRef.current) {
-      // プリロード済み: ミュート解除で即再生
       audio.muted = false;
       audio.volume = volume;
       setIsPlaying(true);
     } else {
-      // プリロード未完了: play()して待つ
       setIsLoading(true);
       audio.src = STREAM_URL;
       audio.volume = volume;
@@ -164,8 +164,7 @@ export function RadioPlayer() {
         @keyframes barPulse3 { from { height: ${MIN_BAR_HEIGHT}px; } to { height: ${MAX_BAR_HEIGHT * 0.8}px; } }
       `}</style>
       <Box
-        w="420px"
-        maxW="100%"
+        w="100%"
         bg="#1A1B2E"
         borderRadius="20px"
         p="32px 28px"
@@ -213,106 +212,121 @@ export function RadioPlayer() {
           </Flex>
         </Flex>
 
-        {/* Visualizer */}
-        <Visualizer isPlaying={isPlaying} />
+        {/* Body: vertical on narrow, horizontal on wide */}
+        <Flex
+          direction={{ base: "column", md: "row" }}
+          gap="24px"
+          align="stretch"
+        >
+          {/* Visualizer */}
+          <Visualizer isPlaying={isPlaying} />
 
-        {/* Track Info */}
-        <Flex direction="column" align="center" gap="6px">
-          <Text
-            fontFamily="var(--font-fraunces)"
-            fontSize="22px"
-            fontWeight="500"
-            color="#F7F6F3"
-            letterSpacing="-0.5px"
-            textAlign="center"
-          >
-            {streamStatus?.currentTrack?.title || "FM ETS2 JP"}
-          </Text>
-          <Text
-            fontFamily="var(--font-plus-jakarta-sans)"
-            fontSize="14px"
-            color="#8E8E93"
-            textAlign="center"
-          >
-            {streamStatus?.currentTrack?.artist || "ライブストリーミング中"}
-          </Text>
-          {streamStatus?.listeners != null && (
-            <Text
-              fontFamily="var(--font-plus-jakarta-sans)"
-              fontSize="12px"
-              color="#6B6B6B"
-              textAlign="center"
-            >
-              {streamStatus.listeners} リスナー
-            </Text>
-          )}
-        </Flex>
-
-        {/* Divider */}
-        <Box w="100%" h="1px" bg="#F0EFEC15" />
-
-        {/* Play Button */}
-        <Flex justify="center">
-          <Box
-            as="button"
-            w="64px"
-            h="64px"
-            borderRadius="50%"
-            bg="#7C9070"
-            display="flex"
-            alignItems="center"
-            justifyContent="center"
-            cursor="pointer"
-            boxShadow="0 4px 20px rgba(124,144,112,0.25)"
-            _hover={{ opacity: 0.9 }}
-            transition="opacity 0.2s"
-            onClick={togglePlay}
-            border="none"
-          >
-            {isLoading ? (
-              <Loader size={28} color="#FFFFFF" style={{ animation: "spin 1s linear infinite" }} />
-            ) : isPlaying ? (
-              <Pause size={28} color="#FFFFFF" fill="#FFFFFF" />
-            ) : (
-              <Play size={28} color="#FFFFFF" fill="#FFFFFF" />
-            )}
-          </Box>
-        </Flex>
-
-        {/* Volume */}
-        <Flex align="center" gap="12px" w="100%">
-          <Volume1 size={18} color="#8E8E93" />
-          <Box
-            ref={sliderTrackRef}
+          {/* Controls */}
+          <Flex
+            direction="column"
+            gap="20px"
+            justify="center"
+            align="center"
             flex="1"
-            h="4px"
-            bg="#F0EFEC20"
-            borderRadius="2px"
-            position="relative"
-            cursor="pointer"
-            onClick={handleVolumeChange}
           >
+            {/* Track Info */}
+            <Flex direction="column" align="center" gap="6px">
+              <Text
+                fontFamily="var(--font-fraunces)"
+                fontSize="22px"
+                fontWeight="500"
+                color="#F7F6F3"
+                letterSpacing="-0.5px"
+                textAlign="center"
+              >
+                {streamStatus?.currentTrack?.title || "FM ETS2 JP"}
+              </Text>
+              <Text
+                fontFamily="var(--font-plus-jakarta-sans)"
+                fontSize="14px"
+                color="#8E8E93"
+                textAlign="center"
+              >
+                {streamStatus?.currentTrack?.artist || "ライブストリーミング中"}
+              </Text>
+              {streamStatus?.listeners != null && (
+                <Text
+                  fontFamily="var(--font-plus-jakarta-sans)"
+                  fontSize="12px"
+                  color="#6B6B6B"
+                  textAlign="center"
+                >
+                  {streamStatus.listeners} リスナー
+                </Text>
+              )}
+            </Flex>
+
+            {/* Divider */}
+            <Box w="100%" h="1px" bg="#F0EFEC15" />
+
+            {/* Play Button */}
             <Box
-              h="4px"
-              bg="#7C9070"
-              borderRadius="2px"
-              w={`${volume * 100}%`}
-              transition="width 0.1s"
-            />
-            <Box
-              position="absolute"
-              top="50%"
-              left={`${volume * 100}%`}
-              transform="translate(-50%, -50%)"
-              w="12px"
-              h="12px"
+              as="button"
+              w="64px"
+              h="64px"
               borderRadius="50%"
-              bg="#F7F6F3"
-              boxShadow="0 2px 6px rgba(0,0,0,0.19)"
-              pointerEvents="none"
-            />
-          </Box>
-          <Volume2 size={18} color="#8E8E93" />
+              bg="#7C9070"
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+              cursor="pointer"
+              boxShadow="0 4px 20px rgba(124,144,112,0.25)"
+              _hover={{ opacity: 0.9 }}
+              transition="opacity 0.2s"
+              onClick={togglePlay}
+              border="none"
+              flexShrink={0}
+            >
+              {isLoading ? (
+                <Loader size={28} color="#FFFFFF" style={{ animation: "spin 1s linear infinite" }} />
+              ) : isPlaying ? (
+                <Pause size={28} color="#FFFFFF" fill="#FFFFFF" />
+              ) : (
+                <Play size={28} color="#FFFFFF" fill="#FFFFFF" />
+              )}
+            </Box>
+
+            {/* Volume */}
+            <Flex align="center" gap="12px" w="100%">
+              <Volume1 size={18} color="#8E8E93" />
+              <Box
+                ref={sliderTrackRef}
+                flex="1"
+                h="4px"
+                bg="#F0EFEC20"
+                borderRadius="2px"
+                position="relative"
+                cursor="pointer"
+                onClick={handleVolumeChange}
+              >
+                <Box
+                  h="4px"
+                  bg="#7C9070"
+                  borderRadius="2px"
+                  w={`${volume * 100}%`}
+                  transition="width 0.1s"
+                />
+                <Box
+                  position="absolute"
+                  top="50%"
+                  left={`${volume * 100}%`}
+                  transform="translate(-50%, -50%)"
+                  w="12px"
+                  h="12px"
+                  borderRadius="50%"
+                  bg="#F7F6F3"
+                  boxShadow="0 2px 6px rgba(0,0,0,0.19)"
+                  pointerEvents="none"
+                />
+              </Box>
+              <Volume2 size={18} color="#8E8E93" />
+            </Flex>
+          </Flex>
         </Flex>
       </Box>
     </>
